@@ -29,7 +29,6 @@ Route::get('/contact', [HomeController::class, 'contact']);
 Route::get('/details', [HomeController::class, 'details']);
 Route::get('/elements', [HomeController::class, 'elements']);
 Route::get('/latest-news', [HomeController::class, 'latestNews']);
-Route::get('/main', [HomeController::class, 'main']);
 Route::get('/single-blog', [HomeController::class, 'singleBlog']);
 
 //auth
