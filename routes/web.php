@@ -20,7 +20,17 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
+//home
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/about', [HomeController::class, 'about']);
+Route::get('/blog', [HomeController::class, 'blog']);
+Route::get('/categori', [HomeController::class, 'categori']);
+Route::get('/contact', [HomeController::class, 'contact']);
+Route::get('/details', [HomeController::class, 'details']);
+Route::get('/elements', [HomeController::class, 'elements']);
+Route::get('/latest-news', [HomeController::class, 'latestNews']);
+Route::get('/main', [HomeController::class, 'main']);
+Route::get('/single-blog', [HomeController::class, 'singleBlog']);
 
 //auth
 Route::get('/login', [AuthController::class, 'login'])->name('login');
