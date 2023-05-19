@@ -41,6 +41,9 @@
               <span class="fas fa-envelope"></span>
             </div>
           </div>
+          @error('email')
+          <small style="color: red">{{ $message }}</small>
+      @enderror
         </div>
         <div class="input-group mb-3">
           <input type="password" class="form-control" placeholder="Password" name="password">
@@ -50,6 +53,9 @@
             </div>
           </div>
         </div>
+        @error('password')
+        <small style="color: red">{{ $message }}</small>
+      @enderror
         <div class="row">
           <!-- /.col -->
           <div class="col-12">
