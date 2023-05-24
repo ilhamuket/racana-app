@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="manifest" href="site.webmanifest">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/trending/logo.jpg">
 
 		<!-- CSS here -->
             <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -70,14 +70,10 @@
                             <!-- Logo -->
                             <div class="col-xl-3 col-lg-3 col-md-3">
                                 <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                    <a href="index.html"><img src="assets/img/trending/logo.png" alt=""></a>
                                 </div>
                             </div>
-                            <div class="col-xl-9 col-lg-9 col-md-9">
-                                <div class="header-banner f-right ">
-                                    <img src="assets/img/hero/header_card.jpg" alt="">
-                                </div>
-                            </div>
+                           
                         </div>
                    </div>
                 </div>
@@ -87,23 +83,29 @@
                             <div class="col-xl-10 col-lg-10 col-md-12 header-flex">
                                 <!-- sticky -->
                                     <div class="sticky-logo">
-                                        <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                        <a href="index.html"><img src="assets/img/trending/logo.png" alt=""></a>
                                     </div>
                                 <!-- Main-menu -->
                                 <div class="main-menu d-none d-md-block">
                                     <nav>                  
                                         <ul id="navigation">    
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="categori.html">Category</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="latest_news.html">Latest News</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="#">Pages</a>
+                                            <li><a href="index">BERANDA</a></li>
+                                            <li><a href="categori">PROFIL RACANA</a></li>
+                                            <li><a href="about">MARS RACANA</a></li>
+                                            <li><a href="latest_news">LOGO PRAMUKA ARS</a></li>
+                                            <li><a href="contact">LOKASI PETA</a></li>
+                                            <li><a href="contact">TEKPRAM</a></li>
+                                            <li><a href="#">PH DR</a>
                                                 <ul class="submenu">
-                                                    <li><a href="elements.html">Element</a></li>
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="single-blog.html">Blog Details</a></li>
-                                                    <li><a href="details.html">Categori Details</a></li>
+                                                    <li><a href="blog">Program Kerja</a></li>
+                                                    <li><a href="elements">Perangkat Bantu</a>
+                                                        <ul class="submenu">
+                                                            <li><a href="elements">Bidang</a></li>
+                                                            <li><a href="blog">KIR</a></li>
+                                                            <li><a href="blog">FBS</a></li>
+                                                            <li><a href="blog">Kelompok Kerja</a></li>
+                                                        </ul>
+                                                    </li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -142,15 +144,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="trending-tittle">
-                            <strong>Trending now</strong>
+                            <strong>Terbaru</strong>
                             <!-- <p>Rem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-                            <div class="trending-animated">
-                                <ul id="js-news" class="js-hidden">
-                                    <li class="news-item">Bangladesh dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="news-item">Spondon IT sit amet, consectetur.......</li>
-                                    <li class="news-item">Rem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                </ul>
-                            </div>
                             
                         </div>
                     </div>
@@ -160,10 +155,10 @@
                         <!-- Trending Top -->
                         <div class="trending-top mb-30">
                             <div class="trend-top-img">
-                                <img src="assets/img/trending/trending_top.jpg" alt="">
+                                <img src="assets/img/trending/pramuka3.jpg" alt="">
                                 <div class="trend-top-cap">
-                                    <span>Appetizers</span>
-                                    <h2><a href="details.html">Welcome To The Best Model Winner<br> Contest At Look of the year</a></h2>
+                                    <span>Kabar Raacana</span>
+                                    <h2><a href="details.html">Pelantikan dan Peresmian<br> Ambalan dan Racana Pramuka Ars University</a></h2>
                                 </div>
                             </div>
                         </div>
@@ -173,33 +168,33 @@
                                 <div class="col-lg-4">
                                 <div class="single-bottom mb-35">
                                     <div class="trend-bottom-img mb-30">
-                                        <img src="assets/img/trending/trending_bottom1.jpg" alt="">
+                                        <img src="assets/img/trending/trending1.png" alt="">
                                     </div>
                                     <div class="trend-bottom-cap">
-                                        <span class="color1">Lifestyple</span>
-                                        <h4><a href="details.html">Get the Illusion of Fuller Lashes by “Mascng.”</a></h4>
+                                        <span class="color1">Program Kerja</span>
+                                        <h4><a href="details.html">Latihan Rutin Warga Racana Tahun 2023</a></h4>
                                     </div>
                                 </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="single-bottom mb-35">
                                         <div class="trend-bottom-img mb-30">
-                                            <img src="assets/img/trending/trending_bottom2.jpg" alt="">
+                                            <img src="assets/img/trending/trending2.png" alt="">
                                         </div>
                                         <div class="trend-bottom-cap">
-                                            <span class="color2">Sports</span>
-                                            <h4><h4><a href="details.html">Get the Illusion of Fuller Lashes by “Mascng.”</a></h4></h4>
+                                            <span class="color2">Program Kerja</span>
+                                            <h4><h4><a href="details.html">Adat Pernikahan Tahun 2023</a></h4></h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="single-bottom mb-35">
                                         <div class="trend-bottom-img mb-30">
-                                            <img src="assets/img/trending/trending_bottom3.jpg" alt="">
+                                            <img src="assets/img/trending/trending3.png" alt="">
                                         </div>
                                         <div class="trend-bottom-cap">
-                                            <span class="color3">Travels</span>
-                                            <h4><a href="details.html"> Welcome To The Best Model Winner Contest</a></h4>
+                                            <span class="color3">Program Kerja</span>
+                                            <h4><a href="details.html"> Pendidikan Instruktur Racana Tahun 2023</a></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -210,47 +205,47 @@
                     <div class="col-lg-4">
                         <div class="trand-right-single d-flex">
                             <div class="trand-right-img">
-                                <img src="assets/img/trending/right1.jpg" alt="">
+                                <img src="assets/img/trending/right1.png" alt="">
                             </div>
                             <div class="trand-right-cap">
-                                <span class="color1">Concert</span>
-                                <h4><a href="details.html">Welcome To The Best Model Winner Contest</a></h4>
+                                <span class="color1">Program Kerja</span>
+                                <h4><a href="details.html">Geladian Kepemimpinan dan Upgrading Tahun 2023</a></h4>
                             </div>
                         </div>
                         <div class="trand-right-single d-flex">
                             <div class="trand-right-img">
-                                <img src="assets/img/trending/right2.jpg" alt="">
+                                <img src="assets/img/trending/right2.png" alt="">
                             </div>
                             <div class="trand-right-cap">
-                                <span class="color3">sea beach</span>
-                                <h4><a href="details.html">Welcome To The Best Model Winner Contest</a></h4>
+                                <span class="color3">Informasi</span>
+                                <h4><a href="details.html">Adat Pernikahan Tahun 2022</a></h4>
                             </div>
                         </div>
                         <div class="trand-right-single d-flex">
                             <div class="trand-right-img">
-                                <img src="assets/img/trending/right3.jpg" alt="">
+                                <img src="assets/img/trending/right3.png" alt="">
                             </div>
                             <div class="trand-right-cap">
-                                <span class="color2">Bike Show</span>
-                                <h4><a href="details.html">Welcome To The Best Model Winner Contest</a></h4>
+                                <span class="color2">Informasi</span>
+                                <h4><a href="details.html">Sarasehan Adat 2022</a></h4>
                             </div>
                         </div> 
                         <div class="trand-right-single d-flex">
                             <div class="trand-right-img">
-                                <img src="assets/img/trending/right4.jpg" alt="">
+                                <img src="assets/img/trending/right4.png" alt="">
                             </div>
                             <div class="trand-right-cap">
-                                <span class="color4">See beach</span>
-                                <h4><a href="details.html">Welcome To The Best Model Winner Contest</a></h4>
+                                <span class="color4">Informasi</span>
+                                <h4><a href="details.html">Latihan Rutin</a></h4>
                             </div>
                         </div>
                         <div class="trand-right-single d-flex">
                             <div class="trand-right-img">
-                                <img src="assets/img/trending/right5.jpg" alt="">
+                                <img src="assets/img/trending/right5.png" alt="">
                             </div>
                             <div class="trand-right-cap">
-                                <span class="color1">Skeping</span>
-                                <h4><a href="details.html">Welcome To The Best Model Winner Contest</a></h4>
+                                <span class="color1">Informasi</span>
+                                <h4><a href="details.html">Penerimaan Tamu Racana (PTR) Tahun 2023</a></h4>
                             </div>
                         </div>
                     </div>
