@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\TmDataArticle;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class TmRefCategory extends Model
 {
@@ -13,5 +14,11 @@ class TmRefCategory extends Model
 
     protected $primaryKey = 'id';
 
-    public $timestamps = false;
+    public $timestamps = true;
+
+
+    public function article(){
+        return $this->hasMany(TmDataArticle::class, 'id', 'categories_id');
+    }
+    
 }

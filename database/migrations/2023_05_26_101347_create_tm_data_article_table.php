@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('tm_data_article', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('judul');
             $table->string('slug');
             $table->string('description');
             $table->foreignId('categories_id')->constrained('tm_ref_category');

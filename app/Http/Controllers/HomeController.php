@@ -3,37 +3,186 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\TmDataArticle;
 
 class HomeController extends Controller
-{
+{   
+
+    public function updateViews($id)
+    {
+        try {
+            DB::beginTransaction();
+            
+            // Find the record by ID
+            $data = TmDataArticle::findOrFail($id);
+
+            // Update the 'views' column
+            $data->views += 1;
+            $data->save();
+
+            DB::commit();
+
+            // Redirect back to the page or perform any other action
+            return redirect()->back();
+        } catch (\Exception $e) {
+            DB::rollBack();
+
+            $data = [
+                'message' => $e->getMessage(),
+                'file' => $e->getFile(),
+                'line' => $e->getLine(),
+            ];
+
+            return ResponseFormatter::error($data);
+        }
+    }
     public function index(){
-        return view('home.index');
+    
+    $trending = TmDataArticle::with('categories')->where('status', 1)->latest()->first();
+
+    $data = TmDataArticle::with('categories')->where('status', 1)->get();
+
+    $popular = TmDataArticle::with('categories')
+                    ->where('status', 1)
+                    ->inRandomOrder()
+                    ->limit(5)
+                    ->get();
+
+
+
+        return view('home.index',compact('data','trending','popular'));
     }
-    public function about(){
-        return view('home.about');
+    public function profil(){
+    $trending = TmDataArticle::with('categories')->where('status', 1)->latest()->first();
+
+    $data = TmDataArticle::with('categories')->where('status', 1)->get();
+
+    $popular = TmDataArticle::with('categories')
+                    ->where('status', 1)
+                    ->inRandomOrder()
+                    ->limit(5)
+                    ->get();
+
+
+
+        return view('home.profile',compact('data','trending','popular'));
     }
-    public function blog(){
-        return view('home.blog');
+    public function mars(){
+
+        $trending = TmDataArticle::with('categories')->where('status', 1)->latest()->first();
+
+    $data = TmDataArticle::with('categories')->where('status', 1)->get();
+
+    $popular = TmDataArticle::with('categories')
+                    ->where('status', 1)
+                    ->inRandomOrder()
+                    ->limit(5)
+                    ->get();
+        return view('home.mars',compact('data','trending','popular'));
     }
-    public function categori(){
-        return view('home.categori');
+    public function logo(){
+
+        $trending = TmDataArticle::with('categories')->where('status', 1)->latest()->first();
+
+    $data = TmDataArticle::with('categories')->where('status', 1)->get();
+
+    $popular = TmDataArticle::with('categories')
+                    ->where('status', 1)
+                    ->inRandomOrder()
+                    ->limit(5)
+                    ->get();
+        return view('home.logo',compact('data','trending','popular'));
     }
-    public function contact(){
-        return view('home.contact');
+    public function lokasi(){
+
+        $trending = TmDataArticle::with('categories')->where('status', 1)->latest()->first();
+
+    $data = TmDataArticle::with('categories')->where('status', 1)->get();
+
+    $popular = TmDataArticle::with('categories')
+                    ->where('status', 1)
+                    ->inRandomOrder()
+                    ->limit(5)
+                    ->get();
+        return view('home.lokasi',compact('data','trending','popular'));
     }
-    public function details(){
-        return view('home.details');
+    public function tekpram(){
+
+        $trending = TmDataArticle::with('categories')->where('status', 1)->latest()->first();
+
+    $data = TmDataArticle::with('categories')->where('status', 1)->get();
+
+    $popular = TmDataArticle::with('categories')
+                    ->where('status', 1)
+                    ->inRandomOrder()
+                    ->limit(5)
+                    ->get();
+        return view('home.tekpram',compact('data','trending','popular'));
     }
-    public function elements(){
-        return view('home.elements');
+    public function proker(){
+
+        $trending = TmDataArticle::with('categories')->where('status', 1)->latest()->first();
+
+    $data = TmDataArticle::with('categories')->where('status', 1)->get();
+
+    $popular = TmDataArticle::with('categories')
+                    ->where('status', 1)
+                    ->inRandomOrder()
+                    ->limit(5)
+                    ->get();
+        return view('home.proker',compact('data','trending','popular'));
     }
-    public function latestNews(){
-        return view('home.latest_news');
+    public function bidang(){
+        $trending = TmDataArticle::with('categories')->where('status', 1)->latest()->first();
+
+    $data = TmDataArticle::with('categories')->where('status', 1)->get();
+
+    $popular = TmDataArticle::with('categories')
+                    ->where('status', 1)
+                    ->inRandomOrder()
+                    ->limit(5)
+                    ->get();
+        return view('home.bidang',compact('data','trending','popular'));
     }
-    public function main(){
-        return view('home.main');
+    public function kir(){
+        $trending = TmDataArticle::with('categories')->where('status', 1)->latest()->first();
+
+    $data = TmDataArticle::with('categories')->where('status', 1)->get();
+
+    $popular = TmDataArticle::with('categories')
+                    ->where('status', 1)
+                    ->inRandomOrder()
+                    ->limit(5)
+                    ->get();
+        return view('home.kir',compact('data','trending','popular'));
     }
-    public function singleBlog(){
-        return view('home.single_blog');
+    public function fbs(){
+        $trending = TmDataArticle::with('categories')->where('status', 1)->latest()->first();
+
+    $data = TmDataArticle::with('categories')->where('status', 1)->get();
+
+    $popular = TmDataArticle::with('categories')
+                    ->where('status', 1)
+                    ->inRandomOrder()
+                    ->limit(5)
+                    ->get();
+        return view('home.fbs',compact('data','trending','popular'));
+    }
+    public function kelompok(){
+        $trending = TmDataArticle::with('categories')->where('status', 1)->latest()->first();
+
+    $data = TmDataArticle::with('categories')->where('status', 1)->get();
+
+    $popular = TmDataArticle::with('categories')
+                    ->where('status', 1)
+                    ->inRandomOrder()
+                    ->limit(5)
+                    ->get();
+        return view('home.kelompok',compact('data','trending','popular'));
+    }
+
+    public function join(){
+
+        return view('home.join');
     }
 }

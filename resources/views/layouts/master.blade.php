@@ -178,7 +178,7 @@
                     $('#success-alert').text('Password Berhasil Diubah').fadeIn();
                 // Redirect to a new page
                 setTimeout(function() {
-                    window.location.href = "{{ route('root') }}";
+                    window.location.href = "#";
                 }, 1000); 
                 // Close the modal
                 },

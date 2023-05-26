@@ -35,7 +35,7 @@
                         <ul class="sub-menu" aria-expanded="false">
                            
                                 <li>
-                                    <a href="#" key="t-saas">@lang('translation.Data_Article')</a>
+                                    <a href="{{ route('article.index') }}" key="t-saas">@lang('translation.Data_Article')</a>
                                 </li>
                            
                         </ul>
