@@ -10,6 +10,9 @@
 		<link rel="shortcut icon" type="image/x-icon" href="assets/img/trending/logo.jpg">
 
 		<!-- CSS here -->
+        <!-- Leaflet CSS -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
             <link rel="stylesheet" href="{{ URL::asset('/assets/css/bootstrap.min.css') }}">
             <link rel="stylesheet" href="{{ URL::asset('/assets/css/owl.carousel.min.css') }}">
             <link rel="stylesheet" href="{{ URL::asset('/assets/css/ticker-style.css') }}">
@@ -23,6 +26,12 @@
             <link rel="stylesheet" href="{{ URL::asset('/assets/css/nice-select.css') }}">
             <link rel="stylesheet" href="{{ URL::asset('/assets/css/style.css') }}">
    </head>
+   <style>
+    ul.numbered-list {
+      list-style-type: decimal; /* Use decimal numbering */
+      padding-left: 20px; /* Add left padding to align the numbers */
+    }
+  </style>
 
    <body>
        
@@ -50,7 +59,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="trending-tittle">
-                            <strong>Berita Terbaru</strong>
+                            
                             <!-- <p>Rem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
                             
                         </div>
@@ -61,43 +70,20 @@
                         <!-- Trending Top -->
                         <div class="trending-top mb-30">
                             
-                            <div class="trend-top-img">
-                                <img src="{{ $trending->image_url }}" alt="" width="300" height="500">
-                                <div class="trend-top-cap">
-                                    <span>{{ $trending->categories->name }}</span>
-                                    <h2><a href="details.html">{{ $trending->name }}</a></h2>
-                                </div>
-                            </div>
-                            
+                            <div id="map" style="width: 100%; height: 500px;"></div>
+
+
                         </div>
                         <!-- Trending Bottom -->
-                        <div class="trending-bottom">
+                        <div class="trending-bottom mb-3">
                             <div class="container">
+                                <div class="row mb-3">
+                                    <h2>LOKASI PETA AMBACANA ARS UNIVERSITY</h2>
+                                </div>
                                 <div class="row">
-                                    @foreach ($data as $item)
-                                        <div class="col-lg-4">
-                                            <div class="single-bottom mb-35">
-                                                <div class="trend-bottom-img mb-30">
-                                                    <img src="{{ $item->image_url }}" alt="" width="200" height="150">
-                                                </div>
-                                                <div class="trend-bottom-cap">
-                                                    <span class="color1">{{ $item->categories->name }}</span>
-                                                    <h4><a href="details.html">{{ $item->name }}</a></h4>
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <h6 class="text-muted"><i class="
-                                                                    fas fa-eye"></i> {{ $item->views }}</h6>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <h6 class="text-muted"><i class="
-                                                                far fa-calendar"></i> {{ $item->updated_at->format('m/Y') }}
-                                                            </h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    @endforeach
+                                    <p>Ambacana ARS UNIVERSITY berada di kampus ARS UNIVERSITY</p> <br>
+                                    <p>berada di Antapani, Jl. Terusan Sekolah No.1-2, Cicaheum, Kec. Kiaracondong, Kota Bandung, Jawa Barat 40282</p> <br>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -183,6 +169,10 @@
    
 	<!-- JS here -->
     {{ URL::asset('/build/css/bootstrap.min.css') }}
+    <!-- Leaflet JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
 		<!-- All JS Custom Plugins Link Here here -->
         <script src="{{ URL::asset('/assets/js/vendor/modernizr-3.5.0.min.js') }}"></script>
 		<!-- Jquery, Popper, Bootstrap -->
@@ -221,6 +211,32 @@
 		<!-- Jquery Plugins, main Jquery -->	
         <script src="{{ URL::asset('/assets/js/plugins.js') }}"></script>
         <script src="{{ URL::asset('/assets/js/main.js') }}"></script>
+        <script>
+            function initializeMap() {
+            // Set the latitude and longitude coordinates
+            var latitude = -6.907860013130947; // Example latitude (London)
+            var longitude = 107.6517003289475; // Example longitude (London)
+          
+            // Create a map object and set its center using the coordinates
+            var map = L.map('map').setView([latitude, longitude], 25);
+          
+            // Add a tile layer to the map (using OpenStreetMap tiles)
+             // Add a tile layer to the map (using OpenStreetMap tiles)
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Add a marker at the specified location
+            var marker = L.marker([latitude, longitude]).addTo(map);
+          }
+          
+          
+          // Call the initializeMap function when the page has finished loading
+          document.addEventListener('DOMContentLoaded', initializeMap);
+        </script>
+          
+        
+        
         
     </body>
 </html>

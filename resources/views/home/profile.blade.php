@@ -56,7 +56,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="trending-tittle">
-                            <strong>Berita Terbaru</strong>
+                            
                             <!-- <p>Rem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
                             
                         </div>
@@ -68,11 +68,7 @@
                         <div class="trending-top mb-30">
                             
                             <div class="trend-top-img">
-                                <img src="{{ $trending->image_url }}" alt="" width="300" height="500">
-                                <div class="trend-top-cap">
-                                    <span>{{ $trending->categories->name }}</span>
-                                    <h2><a href="details.html">{{ $trending->name }}</a></h2>
-                                </div>
+                                <img src="build/img/trending/pramuka3.jpg" alt="" width="300">
                             </div>
                             
                         </div>

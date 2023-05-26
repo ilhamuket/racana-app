@@ -23,6 +23,12 @@
             <link rel="stylesheet" href="{{ URL::asset('/assets/css/nice-select.css') }}">
             <link rel="stylesheet" href="{{ URL::asset('/assets/css/style.css') }}">
    </head>
+   <style>
+    ul.numbered-list {
+      list-style-type: decimal; /* Use decimal numbering */
+      padding-left: 20px; /* Add left padding to align the numbers */
+    }
+  </style>
 
    <body>
        
@@ -50,7 +56,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="trending-tittle">
-                            <strong>Berita Terbaru</strong>
+                            
                             <!-- <p>Rem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
                             
                         </div>
@@ -62,42 +68,19 @@
                         <div class="trending-top mb-30">
                             
                             <div class="trend-top-img">
-                                <img src="{{ $trending->image_url }}" alt="" width="300" height="500">
-                                <div class="trend-top-cap">
-                                    <span>{{ $trending->categories->name }}</span>
-                                    <h2><a href="details.html">{{ $trending->name }}</a></h2>
-                                </div>
+                                <img src="build/img/trending/pramuka3.jpg" alt="" width="300">
                             </div>
                             
                         </div>
                         <!-- Trending Bottom -->
-                        <div class="trending-bottom">
+                        <div class="trending-bottom mb-3">
                             <div class="container">
+                                <div class="row mb-3">
+                                    <h2>MARS AMBACANA ARS UNIVERSITY</h2>
+                                </div>
                                 <div class="row">
-                                    @foreach ($data as $item)
-                                        <div class="col-lg-4">
-                                            <div class="single-bottom mb-35">
-                                                <div class="trend-bottom-img mb-30">
-                                                    <img src="{{ $item->image_url }}" alt="" width="200" height="150">
-                                                </div>
-                                                <div class="trend-bottom-cap">
-                                                    <span class="color1">{{ $item->categories->name }}</span>
-                                                    <h4><a href="details.html">{{ $item->name }}</a></h4>
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <h6 class="text-muted"><i class="
-                                                                    fas fa-eye"></i> {{ $item->views }}</h6>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <h6 class="text-muted"><i class="
-                                                                far fa-calendar"></i> {{ $item->updated_at->format('m/Y') }}
-                                                            </h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    @endforeach
+                                    <p>ini nantinya mars.</p> <br>
+                                    
                                 </div>
                             </div>
                         </div>
