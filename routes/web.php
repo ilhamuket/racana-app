@@ -34,7 +34,7 @@ Route::get('/single-blog', [HomeController::class, 'singleBlog']);
 //auth
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::post('/login', [AuthController::class, 'authLogin']);
-Route::get('/logout', [AuthController::class, 'logout']);
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 //dashboard 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
