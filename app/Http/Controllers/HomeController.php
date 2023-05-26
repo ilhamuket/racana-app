@@ -185,4 +185,19 @@ class HomeController extends Controller
 
         return view('home.join');
     }
+
+    public function detail($id){
+
+        $trending = TmDataArticle::with('categories')->where('status', 1)->latest()->first();
+        $item = TmDataArticle::with('categories')->where('status', 1)->where('id',$id)->first();
+        $popular = TmDataArticle::with('categories')
+                    ->where('status', 1)
+                    ->inRandomOrder()
+                    ->limit(5)
+                    ->get();
+
+
+
+        return view('home.detail',compact('item','trending','popular'));
+    }
 }

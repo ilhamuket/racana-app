@@ -65,7 +65,7 @@
                                 <img src="{{ $trending->image_url }}" alt="" width="300" height="500">
                                 <div class="trend-top-cap">
                                     <span>{{ $trending->categories->name }}</span>
-                                    <h2><a href="details.html">{{ $trending->name }}</a></h2>
+                                    <h2><a href="{{ route('detail',$trending->id) }}">{{ $trending->name }}</a></h2>
                                 </div>
                             </div>
                             
@@ -82,7 +82,7 @@
                                                 </div>
                                                 <div class="trend-bottom-cap">
                                                     <span class="color1">{{ $item->categories->name }}</span>
-                                                    <h4><a href="details.html">{{ $item->name }}</a></h4>
+                                                    <h4><a href="{{ route('detail',$item->id) }}">{{ $item->name }}</a></h4>
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <h6 class="text-muted"><i class="
@@ -115,7 +115,7 @@
                                         </div>
                                         <div class="trand-right-cap">
                                             <span class="color1">{{ $pop->categories->name }}</span>
-                                            <h4><a href="details.html">{{ $pop->name }}</a></h4>
+                                            <h4><a href="{{ route('detail',$pop->id) }}">{{ $pop->name }}</a></h4>
                                         </div>
                                     </div>
                                 @endforeach
@@ -150,7 +150,7 @@
                                     </div>
                                     <div class="weekly-caption">
                                         <span class="color1">{{ $item->categories->name }}</span>
-                                        <h4><a href="#">{{ $item->name }}</a></h4>
+                                        <h4><a href="{{ route('detail',$item->id) }}">{{ $item->name }}</a></h4>
                                     </div>
                                 </div>
                             @endforeach

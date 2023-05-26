@@ -98,7 +98,7 @@
                                         </div>
                                         <div class="trand-right-cap">
                                             <span class="color1">{{ $pop->categories->name }}</span>
-                                            <h4><a href="details.html">{{ $pop->name }}</a></h4>
+                                            <h4><a href="{{ route('detail',$pop->id) }}">{{ $pop->name }}</a></h4>
                                         </div>
                                     </div>
                                 @endforeach
@@ -133,7 +133,7 @@
                                     </div>
                                     <div class="weekly-caption">
                                         <span class="color1">{{ $item->categories->name }}</span>
-                                        <h4><a href="#">{{ $item->name }}</a></h4>
+                                        <h4><a href="{{ route('detail',$item->id) }}">{{ $item->name }}</a></h4>
                                     </div>
                                 </div>
                             @endforeach

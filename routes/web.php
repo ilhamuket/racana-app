@@ -24,6 +24,7 @@ Route::get('/welcome', function () {
 //home
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/mars', [HomeController::class, 'mars'])->name('mars');
+Route::get('/detail/{id}', [HomeController::class, 'detail'])->name('detail');
 Route::get('/profil', [HomeController::class, 'profil'])->name('profil');
 Route::get('/logo', [HomeController::class, 'logo'])->name('logo');
 Route::get('/lokasi', [HomeController::class, 'lokasi'])->name('lokasi');
