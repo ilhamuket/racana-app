@@ -68,7 +68,7 @@
             </button>
             <div class="dropdown-menu dropdown-menu-end">
                 <!-- item-->
-                <a class="dropdown-item d-block" href="#" ><span key="t-settings">Uba Profile</span></a>
+                <a class="dropdown-item d-block" href="#" ><span key="t-settings">Ubah Profile</span></a>
                 <a class="dropdown-item d-block" href="#" data-bs-toggle="modal" data-bs-target=".change-password"><span key="t-settings">Ubah Password</span></a>
                 <a class="dropdown-item text-danger" href="/logout" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                     <i class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i>
