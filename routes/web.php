@@ -23,39 +23,7 @@ Route::get('/welcome', function () {
 
 //home
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/mars', [HomeController::class, 'mars'])->name('mars');
-Route::get('/detail/{id}', [HomeController::class, 'detail'])->name('detail');
-Route::get('/profil', [HomeController::class, 'profil'])->name('profil');
-Route::get('/logo', [HomeController::class, 'logo'])->name('logo');
-Route::get('/lokasi', [HomeController::class, 'lokasi'])->name('lokasi');
-Route::get('/tekpram', [HomeController::class, 'tekpram'])->name('tekpram');
-Route::get('/proker', [HomeController::class, 'proker'])->name('proker');
-Route::get('/bidang', [HomeController::class, 'bidang'])->name('bidang');
-Route::get('/kir', [HomeController::class, 'kir'])->name('kir');
-Route::get('/fbs', [HomeController::class, 'fbs'])->name('fbs');
-Route::get('/kelompok', [HomeController::class, 'kelompok'])->name('kelompok');
-Route::get('/join', [HomeController::class, 'join'])->name('join');
-Route::post('/join', [HomeController::class, 'store'])->name('store');
-
-
-
-
-//auth
-Route::get('/login', [AuthController::class, 'login'])->name('login');
-Route::post('/login', [AuthController::class, 'authLogin'])->name('authLogin');
-Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 //dashboard 
-Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
+Route::get('/dashboard', [DashboardController::class, 'index']);
 
-
-Route::prefix('article')->middleware('auth')->group(function () {
-    Route::get('/list', [ArticleController::class,  'list'])->name('article.list');
-    Route::get('/create', [ArticleController::class,  'create'])->name('article.create');
-    Route::get('/edit/{id}', [ArticleController::class, 'edit'])->name('article.edit');
-    Route::put('/update/{id}', [ArticleController::class, 'update'])->name('article.update');
-    Route::get('/publish/{id}', [ArticleController::class, 'publish'])->name('article.publish');
-    Route::get('/index', [ArticleController::class, 'index'])->name('article.index');
-    Route::get('/article/show/{id}', [ArticleController::class, 'showPanitia'])->name('article.show');
-    Route::post('/store', [ArticleController::class, 'store'])->name('article.store');
-});
