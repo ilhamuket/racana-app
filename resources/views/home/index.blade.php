@@ -62,10 +62,10 @@
                         <div class="trending-top mb-30">
                             
                             <div class="trend-top-img">
-                                <img src="{{ $trending->image_url }}" alt="" width="300" height="500">
+                                <img src="assets/img/trending/trending_top.jpg" alt="">
                                 <div class="trend-top-cap">
-                                    <span>{{ $trending->categories->name }}</span>
-                                    <h2><a href="{{ route('detail',$trending->id) }}">{{ $trending->name }}</a></h2>
+                                    <span>Appetizers</span>
+                                    <h2><a href="#">Welcome To The Best Model Winner<br> Contest At Look of the year</a></h2>
                                 </div>
                             </div>
                             
@@ -74,30 +74,140 @@
                         <div class="trending-bottom">
                             <div class="container">
                                 <div class="row">
-                                    @foreach ($data as $item)
+                                    
                                         <div class="col-lg-4">
                                             <div class="single-bottom mb-35">
                                                 <div class="trend-bottom-img mb-30">
-                                                    <img src="{{ $item->image_url }}" alt="" width="200" height="150">
+                                                    <img src="assets/img/trending/trending_bottom2.jpg" alt="">
                                                 </div>
                                                 <div class="trend-bottom-cap">
-                                                    <span class="color1">{{ $item->categories->name }}</span>
-                                                    <h4><a href="{{ route('detail',$item->id) }}">{{ $item->name }}</a></h4>
+                                                    <span class="color1">Sports</span>
+                                                    <h4><a href="#">Get the Illusion of Fuller Lashes by “Mascng.”</a></h4>
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <h6 class="text-muted"><i class="
-                                                                    fas fa-eye"></i> {{ $item->views }}</h6>
+                                                                    fas fa-eye"></i> 67</h6>
                                                         </div>
                                                         <div class="col-md-6">
                                                             <h6 class="text-muted"><i class="
-                                                                far fa-calendar"></i> {{ $item->updated_at->format('m/Y') }}
+                                                                far fa-calendar"></i> 30 Jun 21
                                                             </h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    @endforeach
+                                        <div class="col-lg-4">
+                                            <div class="single-bottom mb-35">
+                                                <div class="trend-bottom-img mb-30">
+                                                    <img src="assets/img/trending/trending_bottom2.jpg" alt="">
+                                                </div>
+                                                <div class="trend-bottom-cap">
+                                                    <span class="color1">Sports</span>
+                                                    <h4><a href="#">Get the Illusion of Fuller Lashes by “Mascng.”</a></h4>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h6 class="text-muted"><i class="
+                                                                    fas fa-eye"></i> 67</h6>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <h6 class="text-muted"><i class="
+                                                                far fa-calendar"></i> 30 Jun 21
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="single-bottom mb-35">
+                                                <div class="trend-bottom-img mb-30">
+                                                    <img src="assets/img/trending/trending_bottom2.jpg" alt="">
+                                                </div>
+                                                <div class="trend-bottom-cap">
+                                                    <span class="color1">Sports</span>
+                                                    <h4><a href="#">Get the Illusion of Fuller Lashes by “Mascng.”</a></h4>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h6 class="text-muted"><i class="
+                                                                    fas fa-eye"></i> 67</h6>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <h6 class="text-muted"><i class="
+                                                                far fa-calendar"></i> 30 Jun 21
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="single-bottom mb-35">
+                                                <div class="trend-bottom-img mb-30">
+                                                    <img src="assets/img/trending/trending_bottom2.jpg" alt="">
+                                                </div>
+                                                <div class="trend-bottom-cap">
+                                                    <span class="color1">Sports</span>
+                                                    <h4><a href="#">Get the Illusion of Fuller Lashes by “Mascng.”</a></h4>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h6 class="text-muted"><i class="
+                                                                    fas fa-eye"></i> 67</h6>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <h6 class="text-muted"><i class="
+                                                                far fa-calendar"></i> 30 Jun 21
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="single-bottom mb-35">
+                                                <div class="trend-bottom-img mb-30">
+                                                    <img src="assets/img/trending/trending_bottom2.jpg" alt="">
+                                                </div>
+                                                <div class="trend-bottom-cap">
+                                                    <span class="color1">Sports</span>
+                                                    <h4><a href="#">Get the Illusion of Fuller Lashes by “Mascng.”</a></h4>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h6 class="text-muted"><i class="
+                                                                    fas fa-eye"></i> 67</h6>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <h6 class="text-muted"><i class="
+                                                                far fa-calendar"></i> 30 Jun 21
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="single-bottom mb-35">
+                                                <div class="trend-bottom-img mb-30">
+                                                    <img src="assets/img/trending/trending_bottom2.jpg" alt="">
+                                                </div>
+                                                <div class="trend-bottom-cap">
+                                                    <span class="color1">Sports</span>
+                                                    <h4><a href="#">Get the Illusion of Fuller Lashes by “Mascng.”</a></h4>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h6 class="text-muted"><i class="
+                                                                    fas fa-eye"></i> 67</h6>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <h6 class="text-muted"><i class="
+                                                                far fa-calendar"></i> 30 Jun 21
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -108,17 +218,62 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Berita Populer</h4>
-                                @foreach ($popular as $pop)
+                               
                                     <div class="trand-right-single d-flex">
                                         <div class="trand-right-img">
-                                            <img src="{{ $pop->image_url }}" alt="" width="100" height="100">
+                                            <img src="assets/img/trending/right1.jpg" alt="" width="100" height="100">
                                         </div>
                                         <div class="trand-right-cap">
-                                            <span class="color1">{{ $pop->categories->name }}</span>
-                                            <h4><a href="{{ route('detail',$pop->id) }}">{{ $pop->name }}</a></h4>
+                                            <span class="color1">Concert</span>
+                                            <h4><a href="#">Welcome To The Best Model Winner Contest</a></h4>
                                         </div>
                                     </div>
-                                @endforeach
+                                    <div class="trand-right-single d-flex">
+                                        <div class="trand-right-img">
+                                            <img src="assets/img/trending/right1.jpg" alt="" width="100" height="100">
+                                        </div>
+                                        <div class="trand-right-cap">
+                                            <span class="color1">Concert</span>
+                                            <h4><a href="#">Welcome To The Best Model Winner Contest</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="trand-right-single d-flex">
+                                        <div class="trand-right-img">
+                                            <img src="assets/img/trending/right1.jpg" alt="" width="100" height="100">
+                                        </div>
+                                        <div class="trand-right-cap">
+                                            <span class="color1">Concert</span>
+                                            <h4><a href="#">Welcome To The Best Model Winner Contest</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="trand-right-single d-flex">
+                                        <div class="trand-right-img">
+                                            <img src="assets/img/trending/right1.jpg" alt="" width="100" height="100">
+                                        </div>
+                                        <div class="trand-right-cap">
+                                            <span class="color1">Concert</span>
+                                            <h4><a href="#">Welcome To The Best Model Winner Contest</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="trand-right-single d-flex">
+                                        <div class="trand-right-img">
+                                            <img src="assets/img/trending/right1.jpg" alt="" width="100" height="100">
+                                        </div>
+                                        <div class="trand-right-cap">
+                                            <span class="color1">Concert</span>
+                                            <h4><a href="#">Welcome To The Best Model Winner Contest</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="trand-right-single d-flex">
+                                        <div class="trand-right-img">
+                                            <img src="assets/img/trending/right1.jpg" alt="" width="100" height="100">
+                                        </div>
+                                        <div class="trand-right-cap">
+                                            <span class="color1">Concert</span>
+                                            <h4><a href="#">Welcome To The Best Model Winner Contest</a></h4>
+                                        </div>
+                                    </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -143,17 +298,62 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="weekly-news-active dot-style d-flex dot-style">
-                            @foreach ($popular as $item)
+                            
                                 <div class="weekly-single">
                                     <div class="weekly-img">
-                                        <img src="{{ $item->image_url }}" alt="" height="400">
+                                        <img src="assets/img/news/weeklyNews2.jpg" alt="" height="400">
                                     </div>
                                     <div class="weekly-caption">
-                                        <span class="color1">{{ $item->categories->name }}</span>
-                                        <h4><a href="{{ route('detail',$item->id) }}">{{ $item->name }}</a></h4>
+                                        <span class="color1">Strike</span>
+                                        <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
                                     </div>
                                 </div>
-                            @endforeach
+                                <div class="weekly-single">
+                                    <div class="weekly-img">
+                                        <img src="assets/img/news/weeklyNews2.jpg" alt="" height="400">
+                                    </div>
+                                    <div class="weekly-caption">
+                                        <span class="color1">Strike</span>
+                                        <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                    </div>
+                                </div>
+                                <div class="weekly-single">
+                                    <div class="weekly-img">
+                                        <img src="assets/img/news/weeklyNews2.jpg" alt="" height="400">
+                                    </div>
+                                    <div class="weekly-caption">
+                                        <span class="color1">Strike</span>
+                                        <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                    </div>
+                                </div>
+                                <div class="weekly-single">
+                                    <div class="weekly-img">
+                                        <img src="assets/img/news/weeklyNews2.jpg" alt="" height="400">
+                                    </div>
+                                    <div class="weekly-caption">
+                                        <span class="color1">Strike</span>
+                                        <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                    </div>
+                                </div>
+                                <div class="weekly-single">
+                                    <div class="weekly-img">
+                                        <img src="assets/img/news/weeklyNews2.jpg" alt="" height="400">
+                                    </div>
+                                    <div class="weekly-caption">
+                                        <span class="color1">Strike</span>
+                                        <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                    </div>
+                                </div>
+                                <div class="weekly-single">
+                                    <div class="weekly-img">
+                                        <img src="assets/img/news/weeklyNews2.jpg" alt="" height="400">
+                                    </div>
+                                    <div class="weekly-caption">
+                                        <span class="color1">Strike</span>
+                                        <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                    </div>
+                                </div>
+                           
                         </div>
                     </div>
                 </div>

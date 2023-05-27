@@ -13,7 +13,7 @@
                         </div>
                         <div class="col-xl-9 col-lg-9 col-md-9">
                             <div class="header-banner f-right ">
-                               <a href="{{ route('join') }}"> <img  src="assets/img/trending/join.png" alt=""></a>
+                               <a href="#"> <img  src="assets/img/trending/join.png" alt=""></a>
                             </div>
                         </div>
                        
@@ -33,20 +33,20 @@
                                 <nav>                  
                                     <ul id="navigation">    
                                         <li><a href="/">BERANDA</a></li>
-                                        <li><a href="{{ route('profil') }}">PROFIL RACANA</a></li>
-                                        <li><a href="{{ route('mars') }}">MARS RACANA</a></li>
-                                        <li><a href="{{ route('logo') }}">LOGO PRAMUKA ARS</a></li>
-                                        <li><a href="{{ route('lokasi') }}">LOKASI PETA</a></li>
-                                        <li><a href="{{ route('tekpram') }}">TEKPRAM</a></li>
+                                        <li><a href="#">PROFIL RACANA</a></li>
+                                        <li><a href="#">MARS RACANA</a></li>
+                                        <li><a href="#">LOGO PRAMUKA ARS</a></li>
+                                        <li><a href="#">LOKASI PETA</a></li>
+                                        <li><a href="#">TEKPRAM</a></li>
                                         <li><a href="#">PH DR</a>
                                             <ul class="submenu">
-                                                <li><a href="{{ route('proker') }}">Program Kerja</a></li>
+                                                <li><a href="#">Program Kerja</a></li>
                                                 <li><a href="#">Perangkat Bantu</a>
                                                     <ul class="submenu">
-                                                        <li><a href="{{ route('bidang') }}">Bidang</a></li>
-                                                        <li><a href="{{ route('kir') }}">KIR</a></li>
-                                                        <li><a href="{{ route('fbs') }}">FBS</a></li>
-                                                        <li><a href="{{ route('kelompok') }}">Kelompok Kerja</a></li>
+                                                        <li><a href="#">Bidang</a></li>
+                                                        <li><a href="#">KIR</a></li>
+                                                        <li><a href="#">FBS</a></li>
+                                                        <li><a href="#">Kelompok Kerja</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>

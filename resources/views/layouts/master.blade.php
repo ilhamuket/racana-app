@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8" />
-    <title> @yield('title') | KPN {{ date('Y') }}</title>
+    <title> @yield('title') | Racana {{ date('Y') }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Sistem Registrasi KPN" name="description" />
+    <meta content="Sistem Registrasi Racana" name="description" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="{{ URL::asset('build/images/favicon.ico') }}">
     @include('layouts.head-css')
