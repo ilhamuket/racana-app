@@ -10,7 +10,7 @@
 </style>
 
 @section('title')
-    @lang('translation.Article')
+    @lang('translation.Data_Article')
 @endsection
 
 

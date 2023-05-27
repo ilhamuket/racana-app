@@ -32,7 +32,7 @@
           </div>
       @enderror
 
-      <form  method="post">
+      <form  method="post" action="{{ route('authLogin') }}">
         @csrf
         <div class="input-group mb-3">
           <input type="email" class="form-control" placeholder="Email" name="email">

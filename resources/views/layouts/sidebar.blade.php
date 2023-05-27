@@ -40,6 +40,20 @@
                            
                         </ul>
                     </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-home-circle"></i>
+                            <span key="t-dashboards">@lang('translation.Pendaftar')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                           
+                                <li>
+                                    <a href="{{ route('article.index') }}" key="t-saas">@lang('translation.Data_Pendaftar')</a>
+                                </li>
+                           
+                        </ul>
+                    </li>
              
                    
                

@@ -2,8 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Models\TmDataArticle;
+use App\Models\TmDataPendaftar;
+use App\Helpers\ResponseFormatter;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class HomeController extends Controller
 {   
@@ -184,6 +189,64 @@ class HomeController extends Controller
     public function join(){
 
         return view('home.join');
+    }
+
+    public function store(Request $request)
+    {
+        $valid = $request->validate([
+            'name' => 'required|string',
+            'email' => 'required|string|email',
+            'nim' => 'nullable|string',
+            'no_telepon' => 'required',
+            'jenis_kelamin' => 'required',
+            'tanggal_lahir' => 'required',
+            'ukuran_baju' => 'required',
+            'alamat' => 'required',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
+
+        try {
+            DB::beginTransaction();
+            // Handle file upload
+            if ($request->hasFile('image')) {
+                $image = $request->file('image');
+                $imagePath = $image->store('images', 'public');
+                $imageUrl = Storage::disk('public')->url($imagePath);
+            }
+
+            // Format the tanggal_lahir field using Carbon
+            $tanggalLahir = Carbon::createFromFormat('d/m/Y', $valid['tanggal_lahir'])->format('Y-m-d');
+
+            // CREATE TM DATA PANITIA
+            $panitia = TmDataPendaftar::create([
+                'name' => $valid['name'],
+                'email' => $valid['email'],
+                'nim' => $valid['nim'],
+                'no_telepon' => $valid['no_telepon'],
+                'jenis_kelamin' => $valid['jenis_kelamin'],
+                'tanggal_lahir' => $tanggalLahir,
+                'ukuran_baju' => $valid['ukuran_baju'],
+                'alamat' => $valid['alamat'],
+                'image_url' => $imageUrl ?? null,
+            ]);
+
+            DB::commit();
+
+            return response()->json([
+                'message' => 'Submit successful',
+                'success' => true,
+                'data' => $panitia,
+            ], 200);
+        } catch (\Exception $e) {
+            DB::rollBack();
+
+            return response()->json([
+                'message' => $e->getMessage(),
+                'file' => $e->getFile(),
+                'line' => $e->getLine(),
+                'success' => false,
+            ], 500);
+        }
     }
 
     public function detail($id){

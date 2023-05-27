@@ -35,13 +35,14 @@ Route::get('/kir', [HomeController::class, 'kir'])->name('kir');
 Route::get('/fbs', [HomeController::class, 'fbs'])->name('fbs');
 Route::get('/kelompok', [HomeController::class, 'kelompok'])->name('kelompok');
 Route::get('/join', [HomeController::class, 'join'])->name('join');
+Route::post('/join', [HomeController::class, 'store'])->name('store');
 
 
 
 
 //auth
 Route::get('/login', [AuthController::class, 'login'])->name('login');
-Route::post('/login', [AuthController::class, 'authLogin']);
+Route::post('/login', [AuthController::class, 'authLogin'])->name('authLogin');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 //dashboard 
