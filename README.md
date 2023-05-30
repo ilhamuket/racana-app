@@ -115,7 +115,7 @@ _Below is an harus dilakukan adalah meng-clone repository ini sesuai branch yang
 1. Buka terminal/cmd di tempat project, xampp di htdocs, jika laragon di www :
 2. Clone the repo
    ```
-   git clone -b dev https://github.com/ilhamuket/ambacana-portal
+   git clone -b home https://github.com/ilhamuket/ambacana-portal
    ```
 3. Install composer packages
    ```
