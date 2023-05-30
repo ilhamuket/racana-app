@@ -43,7 +43,7 @@ class ArticleController extends Controller
     {
         $anggota = TmDataArticle::where('id', $id)->first();
         
-        return view('admin.article-show', compact('anggota', 'lampiran'));
+        return view('article.article-show', compact('anggota'));
     }
 
     public function create()
@@ -117,10 +117,10 @@ class ArticleController extends Controller
     }
 
     public function edit($id){
-        $anggota = TmDataArticle::where('id', $id)->first();
+        $anggota = TmDataArticle::with('categories')->where('id', $id)->first();
 
             
-        return view('admin.article-edit', compact('anggota'));
+        return view('article.article-edit', compact('anggota'));
     }
 
     public function update(Request $request, $id)
@@ -134,7 +134,7 @@ class ArticleController extends Controller
             DB::commit();
             
             Session::flash('success', 'Sukses Edit data');
-            return response()->json(['success' => true, 'message' => 'Sukses approve data']);
+            return redirect()->back();
         } catch (Exception $exception) {
             DB::rollBack();
             Log::error($exception->getMessage() . $exception->getTraceAsString());

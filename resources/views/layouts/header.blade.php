@@ -23,7 +23,7 @@
            <div class="header-bottom header-sticky">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-xl-10 col-lg-10 col-md-12 header-flex">
+                        <div class="col-xl-12 col-lg-12 col-md-12 header-flex">
                             <!-- sticky -->
                                 <div class="sticky-logo">
                                     <a href="index.html"><img src="build/img/trending/logo.png" alt=""></a>
@@ -33,39 +33,39 @@
                                 <nav>                  
                                     <ul id="navigation">    
                                         <li><a href="/">BERANDA</a></li>
-                                        <li><a href="{{ route('profil') }}">PROFIL RACANA</a></li>
-                                        <li><a href="{{ route('mars') }}">MARS RACANA</a></li>
-                                        <li><a href="{{ route('logo') }}">LOGO PRAMUKA ARS</a></li>
-                                        <li><a href="{{ route('lokasi') }}">LOKASI PETA</a></li>
-                                        <li><a href="{{ route('tekpram') }}">TEKPRAM</a></li>
-                                        <li><a href="#">PH DR</a>
+                                        <li><a href="{{ route('profil') }}">PROFIL AMBACANA</a>
                                             <ul class="submenu">
-                                                <li><a href="{{ route('proker') }}">Program Kerja</a></li>
-                                                <li><a href="#">Perangkat Bantu</a>
-                                                    <ul class="submenu">
-                                                        <li><a href="{{ route('bidang') }}">Bidang</a></li>
-                                                        <li><a href="{{ route('kir') }}">KIR</a></li>
-                                                        <li><a href="{{ route('fbs') }}">FBS</a></li>
-                                                        <li><a href="{{ route('kelompok') }}">Kelompok Kerja</a></li>
-                                                    </ul>
-                                                </li>
+                                                <li><a href="{{ route('tekpram') }}">LOGO AMBACANA</a></li>
+                                                <li><a href="{{ route('kir') }}">PRAMUKA ARS</a></li>
                                             </ul>
                                         </li>
+                                        <li><a href="{{ route('mars') }}">SANDI AMBACANA</a></li>
+                                        <li><a href="{{ route('logo') }}">ADMINISTRASI PRAMUKA ARS</a>
+                                            <ul class="submenu">
+                                                <li><a href="{{ route('bidang') }}">AD & ART</a></li>
+                                                <li><a href="{{ route('kir') }}">PRAMUKA ARS</a></li>
+                                                <li><a href="{{ route('tekpram') }}">DATA POTENSI</a></li>
+                                                <li><a href="{{ route('lokasi') }}">STRUKTUR KEPENGURUSAN</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="{{ route('bidang') }}">GUGUS DEPAN</a></li>
+                                                        <li><a href="{{ route('kir') }}">DEWAN AMBALAN</a></li>
+                                                        <li><a href="{{ route('kir') }}">DEWAN RACANA</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul></li>
+                                            <li><a href="{{ route('mars') }}">UNIT PENGEMBANGAN</a>
+                                                <ul class="submenu">
+                                                    <li><a href="{{ route('bidang') }}">UNIT PROTOKOLER</a></li>
+                                                    <li><a href="{{ route('kir') }}">UNIT SEARCH AND RESCUE</a></li>
+                                                    <li><a href="{{ route('kir') }}">UNIT MEDIA PERS DAN KOMINFO</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="{{ route('mars') }}">PROGRAM KERJA</a></li>
+                                            <li><a href="{{ route('mars') }}">PRESTASI</a></li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>             
-                        <div class="col-xl-2 col-lg-2 col-md-4">
-                            <div class="header-right-btn f-right d-none d-lg-block">
-                                <i class="fas fa-search special-tag"></i>
-                                <div class="search-box">
-                                    <form action="#">
-                                        <input type="text" placeholder="Search">
-                                        
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
                         <!-- Mobile Menu -->
                         <div class="col-12">
                             <div class="mobile_menu d-block d-md-none"></div>

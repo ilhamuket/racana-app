@@ -86,7 +86,7 @@
                                 <td>
                                     <a href="{{ route('category.show', $value->id) }}" class="btn btn-primary">Detail</a>
                                     <a href="{{ route('category.edit', $value->id) }}" class="btn btn-warning">Edit</a>
-                                    @if (!$value->approval_kontingen_status && !$value->approval_panitia_status)
+                                    @if (!$value->status)
                                     <a href="{{ route('category.publish', $value->id) }}"
                                         class="btn btn-success">Publish</a>
                                     @endif

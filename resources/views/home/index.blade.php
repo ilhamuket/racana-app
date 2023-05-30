@@ -182,7 +182,7 @@
    @include('layouts.footer2')
    
 	<!-- JS here -->
-    {{ URL::asset('/build/css/bootstrap.min.css') }}
+    
 		<!-- All JS Custom Plugins Link Here here -->
         <script src="{{ URL::asset('/assets/js/vendor/modernizr-3.5.0.min.js') }}"></script>
 		<!-- Jquery, Popper, Bootstrap -->

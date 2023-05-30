@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\TmRefCategory;
+use App\Models\TmDataPendaftar;
 
-class CategoryController extends Controller
+class PendaftarController extends Controller
 {
     public function list(Request $request)
     {
-        $data = TmRefCategory::all();
+        $data = TmDataPendaftar::all();
 
         return collect($data)->map->only(['id', 'name'])->all();
 
@@ -17,7 +17,7 @@ class CategoryController extends Controller
     public function index()
     {
 
-        $data = TmRefCategory::get();
+        $data = TmDataPendaftar::get();
 
         $dataVerif = $data->where('status', '1');
 
@@ -30,25 +30,25 @@ class CategoryController extends Controller
 
         
 
-        return view('admin.category-index', compact('data','total','totalVerif') );
+        return view('admin.pendaftar-index', compact('data','total','totalVerif') );
     }
 
     public function show($id)
     {
-        $anggota = TmRefCategory::where('id', $id)->first();
+        $anggota = TmDataPendaftar::where('id', $id)->first();
         
-        return view('admin.category-show', compact('anggota'));
+        return view('admin.pendaftar-show', compact('anggota'));
     }
 
     public function create()
     {
-        return view('category.category-create');
+        return view('article.pendaftar-create');
     }
 
 
     public function publish($id)
     {
-        $anggota = TmRefCategory::where('id', $id)->first();
+        $anggota = TmDataPendaftar::where('id', $id)->first();
         $date = date('Y-m-d');
         $user = auth()->user();
         $update = [
@@ -63,15 +63,15 @@ class CategoryController extends Controller
     }
 
     public function edit($id){
-        $anggota = TmRefCategory::where('id', $id)->first();
+        $anggota = TmDataPendaftar::where('id', $id)->first();
 
             
-        return view('admin.category-edit', compact('anggota'));
+        return view('admin.pendaftar-edit', compact('anggota'));
     }
 
     public function update(Request $request, $id)
     {
-        $newdata = TmRefCategory::where('id', $id)->first();
+        $newdata = TmDataPendaftar::where('id', $id)->first();
         DB::beginTransaction();
 
         try {
@@ -80,7 +80,7 @@ class CategoryController extends Controller
             DB::commit();
             
             Session::flash('success', 'Sukses Edit data');
-            return response()->json(['success' => true, 'message' => 'Sukses approve data']);
+            return response()->json(['success' => true, 'message' => 'Sukses edit data']);
         } catch (Exception $exception) {
             DB::rollBack();
             Log::error($exception->getMessage() . $exception->getTraceAsString());
@@ -89,5 +89,4 @@ class CategoryController extends Controller
             return redirect()->back();
         }
     }
-
 }

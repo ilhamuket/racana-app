@@ -17,7 +17,7 @@
                              </div>
                              <!-- social -->
                              <div class="footer-social">
-                                 <a href="https://www.instagram.com/pramukaarsuniversitu/"><i class="fab fa-instagram"></i></a>
+                                 <a href="https://www.instagram.com/pramukaarsuniversity/"><i class="fab fa-instagram"></i></a>
                              </div>
                          </div>
                      </div>
@@ -53,12 +53,12 @@
                          </div>
                          <div class="instagram-gellay">
                              <ul class="insta-feed">
-                                 <li><a href="https://www.instagram.com/pramukaarsuniversitu/"><img src="assets/img/trending/instagram.png" alt=""></a></li>
-                                 <li><a href="https://www.instagram.com/pramukaarsuniversitu/"><img src="assets/img/trending/instagram.png" alt=""></a></li>
-                                 <li><a href="https://www.instagram.com/pramukaarsuniversitu/"><img src="assets/img/trending/instagram.png" alt=""></a></li>
-                                 <li><a href="https://www.instagram.com/pramukaarsuniversitu/"><img src="assets/img/trending/instagram.png" alt=""></a></li>
-                                 <li><a href="https://www.instagram.com/pramukaarsuniversitu/"><img src="assets/img/trending/instagram.png" alt=""></a></li>
-                                 <li><a href="https://www.instagram.com/pramukaarsuniversitu/"><img src="assets/img/trending/instagram.png" alt=""></a></li>
+                                 <li><a href="https://www.instagram.com/pramukaarsuniversity/"><img src="assets/img/trending/instagram.png" alt=""></a></li>
+                                 <li><a href="https://www.instagram.com/pramukaarsuniversity/"><img src="assets/img/trending/instagram.png" alt=""></a></li>
+                                 <li><a href="https://www.instagram.com/pramukaarsuniversity/"><img src="assets/img/trending/instagram.png" alt=""></a></li>
+                                 <li><a href="https://www.instagram.com/pramukaarsuniversity/"><img src="assets/img/trending/instagram.png" alt=""></a></li>
+                                 <li><a href="https://www.instagram.com/pramukaarsuniversity/"><img src="assets/img/trending/instagram.png" alt=""></a></li>
+                                 <li><a href="https://www.instagram.com/pramukaarsuniversity/"><img src="assets/img/trending/instagram.png" alt=""></a></li>
                              </ul>
                          </div>
                      </div>

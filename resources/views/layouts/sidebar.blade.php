@@ -18,7 +18,7 @@
                     <ul class="sub-menu" aria-expanded="false">
                        
                             <li>
-                                <a href="#"
+                                <a href="{{ route('category.index') }}"
                                    key="t-default">@lang('translation.Data_Category')</a>
                             </li>
                        
@@ -49,7 +49,7 @@
                         <ul class="sub-menu" aria-expanded="false">
                            
                                 <li>
-                                    <a href="{{ route('article.index') }}" key="t-saas">@lang('translation.Data_Pendaftar')</a>
+                                    <a href="{{ route('pendaftar.index') }}" key="t-saas">@lang('translation.Data_Pendaftar')</a>
                                 </li>
                            
                         </ul>
