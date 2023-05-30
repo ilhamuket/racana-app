@@ -34,14 +34,14 @@
   <p align="center">
     Silahkan Ikuti Langkah dibawah ini untuk menginstal project
     <br />
-    <a href="https://github.com/ilhamuket/ambacana-portal"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ilhamuket/racana-app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ilhamuket/ambacana-portal">View Demo</a>
+    <a href="https://github.com/ilhamuket/racana-app">View Demo</a>
     ·
-    <a href="https://github.com/ilhamuket/ambacana-portal">Report Bug</a>
+    <a href="https://github.com/ilhamuket/racana-app">Report Bug</a>
     ·
-    <a href="https://github.com/ilhamuket/ambacana-portal">Request Feature</a>
+    <a href="https://github.com/ilhamuket/racana-app">Request Feature</a>
   </p>
 </div>
 
@@ -162,7 +162,7 @@ lihat di [erd](https://lucid.app/lucidchart/a73ff406-60be-44a9-be8d-d626158226c6
 
 Your Name - [@ilhamuket](https://instagram.com/ilhamuket) - ilhamgallagher633@gmail.com
 
-Project Link: [https://github.com/ilhamuket/ambacana-portal](https://github.com/ilhamuket/ambacana-portal)
+Project Link: [https://github.com/ilhamuket/racana-app](https://github.com/ilhamuket/racana-app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
