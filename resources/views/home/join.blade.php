@@ -344,13 +344,13 @@
                     Swal.fire(
                     {
                         title: 'Berhasil Melakukan Pendaftaran!',
-                        text: 'Selamat Kakak Telah Melakukan Pendaftaran, Kakak akan dihubungi oleh kami nanti ya!',
+                        text: 'Selamat Kakak Telah Melakukan Pendaftaran, Silahkan Join Grup Whatsapp dengan Menekan Tombol OK!',
                         icon: 'success',
                         confirmButtonColor: '#556ee6'
                     }
                 ).then((result) => {
                     if (result.isConfirmed) {
-                        window.location.href = '/';
+                        window.location.href = 'https://chat.whatsapp.com/H7TBqpSKgrMJIe8YKDB5EQ';
                     }
                 });
                     } else {
