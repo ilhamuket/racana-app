@@ -57,6 +57,7 @@ Route::prefix('article')->middleware('auth')->group(function () {
     Route::get('/edit/{id}', [ArticleController::class, 'edit'])->name('article.edit');
     Route::post('/update/{id}', [ArticleController::class, 'update'])->name('article.update');
     Route::get('/publish/{id}', [ArticleController::class, 'publish'])->name('article.publish');
+    Route::get('/delete/{id}', [ArticleController::class, 'delete'])->name('article.delete');
     Route::get('/index', [ArticleController::class, 'index'])->name('article.index');
     Route::get('/article/show/{id}', [ArticleController::class, 'show'])->name('article.show');
     Route::post('/store', [ArticleController::class, 'store'])->name('article.store');
@@ -84,4 +85,5 @@ Route::prefix('category')->middleware('auth')->group(function () {
     Route::get('/index', [CategoryController::class, 'index'])->name('category.index');
     Route::get('/category/show/{id}', [CategoryController::class, 'show'])->name('category.show');
     Route::post('/store', [CategoryController::class, 'store'])->name('category.store');
+    Route::get('/delete/{id}', [CategoryController::class, 'delete'])->name('category.delete');
 });

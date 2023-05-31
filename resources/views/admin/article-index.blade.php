@@ -105,6 +105,7 @@
                                 <td class="centered-cell">
                                     <a href="{{ route('article.show', $value->id) }}" class="btn btn-primary">Detail</a>
                                     <a href="{{ route('article.edit', $value->id) }}" class="btn btn-warning">Edit</a>
+                                    <a href="{{ route('article.delete', $value->id) }}" class="btn btn-danger">Delete</a>
                                     @if (!$value->status)
                                     <a href="{{ route('article.publish', $value->id) }}"
                                         class="btn btn-success">Publish</a>

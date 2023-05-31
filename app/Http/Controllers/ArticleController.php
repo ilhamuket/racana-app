@@ -116,6 +116,16 @@ class ArticleController extends Controller
         return redirect()->back();
     }
 
+    public function delete($id)
+    {
+        $anggota = TmDataArticle::where('id', $id)->first();
+
+        $anggota->delete();
+
+        Session::flash('success', 'Sukses delete artikel');
+        return redirect()->back();
+    }
+
     public function edit($id){
         $anggota = TmDataArticle::with('categories')->where('id', $id)->first();
 

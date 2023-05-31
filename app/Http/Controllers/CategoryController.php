@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Models\TmRefCategory;
+use App\Helpers\ResponseFormatter;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 
 class CategoryController extends Controller
 {
@@ -42,7 +46,10 @@ class CategoryController extends Controller
 
     public function create()
     {
-        return view('category.category-create');
+
+       
+
+        return view('kategori.category-add');
     }
 
 
@@ -66,7 +73,7 @@ class CategoryController extends Controller
         $anggota = TmRefCategory::where('id', $id)->first();
 
             
-        return view('admin.category-edit', compact('anggota'));
+        return view('kategori.category-edit', compact('anggota'));
     }
 
     public function update(Request $request, $id)
@@ -80,7 +87,7 @@ class CategoryController extends Controller
             DB::commit();
             
             Session::flash('success', 'Sukses Edit data');
-            return response()->json(['success' => true, 'message' => 'Sukses approve data']);
+            return redirect()->back();
         } catch (Exception $exception) {
             DB::rollBack();
             Log::error($exception->getMessage() . $exception->getTraceAsString());
@@ -88,6 +95,51 @@ class CategoryController extends Controller
             Session::flash('error', 'Gagal Edit data');
             return redirect()->back();
         }
+    }
+
+    public function store(Request $request)
+    {
+        $valid = $request->validate([
+            'name' => 'required|string',
+        ]);
+
+        try {
+            DB::beginTransaction();
+            // Create slug from the name
+            $slug = Str::slug($valid['name']);
+            // CREATE TM DATA PANITIA
+            $panitia = TmRefCategory::create([
+                'name' => $valid['name'],
+                'slug' => $slug,
+                'status' => 1,
+            ]);
+            
+            DB::commit();
+            
+            Session::flash('success', 'Sukses publish kategori');
+            return redirect()->back();
+        } catch (\Exception $e) {
+            DB::rollBack();
+
+            $data = [
+                'message' => $e->getMessage(),
+                'file' => $e->getFile(),
+                'line' => $e->getLine(),
+            ];
+
+            Session::flash('error', 'Gagal publish kategori');
+        return redirect()->back();
+        }
+    }
+
+    public function delete($id)
+    {
+        $anggota = TmRefCategory::where('id', $id)->first();
+
+        $anggota->delete();
+
+        Session::flash('success', 'Sukses delete artikel');
+        return redirect()->back();
     }
 
 }

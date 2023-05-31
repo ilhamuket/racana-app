@@ -84,8 +84,8 @@
                                 </td>
                                 
                                 <td>
-                                    <a href="{{ route('category.show', $value->id) }}" class="btn btn-primary">Detail</a>
                                     <a href="{{ route('category.edit', $value->id) }}" class="btn btn-warning">Edit</a>
+                                    <a href="{{ route('category.delete', $value->id) }}" class="btn btn-danger">Hapus</a>
                                     @if (!$value->status)
                                     <a href="{{ route('category.publish', $value->id) }}"
                                         class="btn btn-success">Publish</a>
