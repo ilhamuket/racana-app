@@ -142,7 +142,7 @@ _Below is an harus dilakukan adalah meng-clone repository ini sesuai branch yang
 ## Usage
 
 Harus mendownload file berikut dan disimpan di folder public/
-
+https://www.mediafire.com/file/erg0v4i84fjody2/racana_db.sql/file
 _unduh di [download](https://www.mediafire.com/file/03tfface16gqr4v/build.zip/file)_
 
 wireframe dilihat disini
